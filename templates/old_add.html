@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+      <form action="{{ url_for('add_cafe') }}", method="POST" >
+      <h1>Add a new cafe into the database</h1>
+
+        {{form.cafe.label}}<br> {{ form.cafe(size=30) }} <br>
+        {{form.Location.label}}<br> {{ form.Location(size=30) }} <br>
+        {{form.Open.label}}<br> {{ form.Open(size=30) }} <br>
+        {{form.Close.label}} <br> {{ form.Close(size=30) }} <br>
+        {{form.Coffee.label}} <br> {{ form.Coffee(width=30) }} <br>
+        {{form.Wifi.label}}<br> {{ form.Wifi(width=80) }} <br>
+        {{form.Power.label}}<br> {{ form.Power(widthS=20) }} <br>
+        <br>{{ form.submit }}
+
+
+      </form>
+</body>
+</html>
